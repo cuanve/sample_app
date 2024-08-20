@@ -1,24 +1,35 @@
-# README
+# Ruby on Rails Tutorial (by Michael Hartl) sample application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## License
 
-Things you may want to cover:
+All source code is available jointly under the MIT License and the Beerware License.
 
-* Ruby version
+## Getting started
 
-* System dependencies
+To get started with the app, clone the repo and then install the needed gems:
 
-* Configuration
+```
+$ gem install bundler -v 2.3.14
+$ bundle _2.3.14_ config set --local without 'production'
+$ bundle _2.3.14_ install
+```
 
-* Database creation
+Next, migrate the database:
 
-* Database initialization
+```
+$ rails db:migrate
+```
 
-* How to run the test suite
+Finally, run the test suite to verify that everything is working correctly:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails text
+```
 
-* Deployment instructions
+If the test suite passes, you'll be ready to run the app in local server:
 
-* ...
+```
+$ rails server
+```
+
+Be HAPPY!!!!
